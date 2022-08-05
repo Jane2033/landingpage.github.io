@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muses - All you need, all unique</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bye1eky.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/src/img/logo.png">
+    <link href="/public/css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="">
+        <nav class="justify-between items-baseline p-5 hidden lg:flex">
+            <a class="text-4xl font-bold font-funkydori pl-5 scroll-smooth" href="#Home">Muses</a>
+                <ul class="flex justify-between items-center">
+                    <li class="text-lg tracking-wider p-5 scroll-smooth"><a href="#Home">Home</a></li>
+                    <li class="text-lg tracking-wider p-5 scroll-smooth"><a href="#products">Shop</a></li>
+                    <li class="text-lg tracking-wider p-5 scroll-smooth"><a href="#ootd">Ootd</a></li>
+                </ul>			
+                <ul class="flex justify-between items-center">
+                    <li class="text-xl p-5">
+                        <a href="#"><i class="bx bx-search"></i></a>
+                    </li>
+                    <li class="text-xl p-5">
+                        <a href="#"><i class="bx bx-log-in"></i></a>
+                    </li>
+                    <li class="text-xl p-5">
+                        <a href="#"><i class="bx bx-cart" id="mybag-btn"></i></a>
+                    </li>
+                </ul>			
+        </nav>
+        <div id="mobile" class="flex justify-between items-baseline lg:hidden">
+            <div>
+                <a class="text-4xl font-bold font-funkydori pl-5" href="#Home">Muses</a>
+            </div>
+            <div class="text-xl p-5">
+                <i id="bar" class="bx bx-menu"></i>
+            </div>
+            <div id="navbar" class="w-full h-screen bg-gradient-to-br from-pink-450 to-red-300 hidden relative">
+                <div class="flex flex-col justify-start">
+                    <ul>
+                        <li class="text-2xl p-5"><i id="close" class="bx bx-x close"></i></li>
+                        <li class="text-xl p-5 tracking-wider"><a href="#Home">Home</a></li>
+                        <li class="text-xl p-5 mt-2 tracking-wider"><a href="#products">Shop</a></li>
+                        <li class="text-xl p-5 mt-2 tracking-wider"><a href="#ootd">Ootd</a></li>
+                    </ul>	
+                </div>
+                <div class="absolute bottom-0 right-0 bg-white text-black w-full text-xl">
+                    <ul class="flex justify-between items-center p-4">
+                        <li>
+                            <button><i class="bx bx-search"></i></button>
+                        </li>
+                        <li>
+                            <button><i class="bx bx-log-in"></i></button>
+                        </li>
+                        <li>
+                            <button><i class="bx bx-cart"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="Home" class="relative flex bg-gradient-to-b from-blue-150 via-pink-25 to-pink-25/0">
+		<div class="grid grid-cols-12 p-24 z-title">	
+            <div class="col-span-6 mt-7 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 relative">
+                <div class="text-white font-quiche">
+                    <h1 class="text-xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl">All you need all unique</h1>
+                </div>
+                <div class="text-white mt-3 sm:mt-5 md:mt-5 xl:mt-16">
+                    <button class="border rounded-full text-xs md:text-sm lg:text-base py-1 px-2 lg:px-3 xl:py-2 xl:px-5 tracking-wider mr-8">加入會員</button>
+                    <button class="border rounded-full text-xs md:text-sm lg:text-base py-1 px-2 lg:px-3 xl:py-2 xl:px-5 tracking-wider">開始購物</button>
+                </div>
+            </div>	
+            <div class="col-span-6 col-start-7">
+                <img src="/src/img/jump.png">
+            </div>
+        </div>
+        <div class="flex flex-col z-bg">
+            <div class="flex justify-between">
+                <img src="/src/img/circle.svg" class="circle">
+                <img src="/src/img/TopRight.svg" class="topright">
+            </div>
+            <img src="/src/img/TopLeft.svg" class="bottomleft">
+        </div>
+	</section>
+
+    <section class="grid xl:grid-cols-3 md:grid-cols-1 gap-8 m-20">
+        <div class="my-5">
+            <img src="/src/img/bag.png" class="shadow-lg rounded-large">
+            <div class="mt-5">
+                <span class="font-quiche text-xs">/ Bags /</span>
+                <h2 class="text-3xl mt-3 tracking-wider">包款</h2>   
+                <div class="">
+                    <p class="text-xs my-12">精緻、永恆的款式，奢華的細節和現代設計。</p>
+                    <div class="bg-black h-0.5 w-full my-5"></div>
+                </div>             
+                <div class="flex items-center">
+                    <button class="font-quiche text-2xl">More
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+        </div>
+        <div class=" my-5 ">
+            <img src="/src/img/clothes.png" class="shadow-lg rounded-large">
+            <div class="mt-5">
+                <span class="font-quiche text-xs">/ Clothes /</span>
+                <h2 class="text-3xl mt-3 tracking-wider">衣著</h2>   
+                <div class="">
+                    <p class="text-xs my-12">自由與高雅創意的展現。</p>
+                    <div class="bg-black h-0.5 w-full my-5"></div>
+                </div>             
+                <div class="flex items-center">
+                    <button class="font-quiche text-2xl">More
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+        </div>
+        <div class="my-5">
+            <img src="/src/img/acc.png" class="shadow-lg rounded-large">
+            <div class="mt-5">
+                <span class="font-quiche text-xs">/ Accessories /</span>
+                <h2 class="text-3xl mt-3 tracking-wider">配飾</h2>   
+                <div class="">
+                    <p class="text-xs my-12">以標誌皮革和圖案精心製作的高雅配飾，採用雅致和經典色調。</p>
+                    <div class="bg-black h-0.5 w-full my-5"></div>
+                </div>             
+                <div class="flex items-center">
+                    <button class="font-quiche text-2xl">More
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="flex flex-col justify-center items-center">
+        <div class="flex justify-center mb-10">
+            <h1 class="text-4xl font-Poppins font-bold p-5">New Arrivals</h1>
+        </div>
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 m-20">
+            <div class="shadow-lg rounded-xl">
+                <div class="group">
+                    <img src="/src/img/bestseller-1-1.jpg" class="block group-hover:hidden rounded-t-xl">
+                    <img src="/src/img/bestseller-1-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div class="m-5">
+                    <div class="flex justify-between items-center my-6">
+                        <h2 class="text-xl font-medium tracking-wide">V領羊絨毛衣</h2>
+                        <p class="text-xl font-semibold">NT$60000</p>
+                    </div>
+                    <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">條紋羊絨毛衣寬鬆剪裁具時尚魅力</p>                                                        
+                    <div class="flex flex-col justify-start flex-wrap relative">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center">
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">S</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">M</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">L</button>
+                            </div> 
+                            <div class="flex justify-center items-center">
+                                <i class="bx bx-minus-circle text-xl cursor-pointer"></i>
+                                <input type="text" value="1" class="w-12 text-center">
+                                <i class="bx bx-plus-circle text-xl cursor-pointer"></i>
+                            </div> 
+                        </div>
+                        <div class="mt-4">
+                            <button class="flex justify-center items-center px-3 w-full h-10 rounded-md bg-pink-550 text-white shadow-lg hover:bg-pink-400 transition-colors">
+                                <span class="text-sm tracking-wider px-3 font-medium">加入購物車</span>
+                                <i class="bx bx-cart-add text-xl"></i>
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-xl">
+                <div class="group">
+                    <img src="/src/img/bestseller-2-1.jpg" class="block group-hover:hidden rounded-t-xl">
+                    <img src="/src/img/bestseller-2-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div class="m-5">
+                    <div class="flex justify-between items-center my-6">
+                        <h2 class="text-xl font-medium tracking-wide">珠地呢迷你裙</h2>
+                        <p class="text-xl font-semibold">NT$24000</p>
+                    </div>
+                    <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">經典款式高雅細節重新演繹</p>                                                        
+                    <div class="flex flex-col justify-start flex-wrap relative">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center">
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">S</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">M</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">L</button>
+                            </div> 
+                            <div class="flex justify-center items-center">
+                                <i class="bx bx-minus-circle text-xl cursor-pointer"></i>
+                                <input type="text" value="1" class="w-12 text-center">
+                                <i class="bx bx-plus-circle text-xl cursor-pointer"></i>
+                            </div> 
+                        </div>
+                        <div class="mt-4">
+                            <button class="flex justify-center items-center px-3 w-full h-10 rounded-md bg-pink-550 text-white shadow-lg hover:bg-pink-400 transition-colors">
+                                <span class="text-sm tracking-wider px-3 font-medium">加入購物車</span>
+                                <i class="bx bx-cart-add text-2xl"></i>
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-xl">
+                <div class="group">
+                    <img src="/src/img/bestseller-3-1.jpg" class="block group-hover:hidden rounded-t-xl">
+                    <img src="/src/img/bestseller-3-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div class="m-5">
+                    <div class="flex justify-between items-center my-6">
+                        <h2 class="text-xl font-medium tracking-wide">刺繡棉質T恤</h2>
+                        <p class="text-xl font-semibold">NT$24000</p>
+                    </div>
+                    <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">輕巧布料及玩味設計完美迎合夏天</p>                                                        
+                    <div class="flex flex-col justify-start flex-wrap relative">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center">
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">S</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">M</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">L</button>
+                            </div> 
+                            <div class="flex justify-center items-center">
+                                <i class="bx bx-minus-circle text-xl cursor-pointer"></i>
+                                <input type="text" value="1" class="w-12 text-center">
+                                <i class="bx bx-plus-circle text-xl cursor-pointer"></i>
+                            </div> 
+                        </div>
+                        <div class="mt-4">
+                            <button class="flex justify-center items-center px-3 w-full h-10 rounded-md bg-pink-550 text-white shadow-lg hover:bg-pink-400 transition-colors">
+                                <span class="text-sm tracking-wider px-3 font-medium">加入購物車</span>
+                                <i class="bx bx-cart-add text-2xl"></i>
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-xl">
+                <div class="group">
+                    <img src="/src/img/bestseller-4-1.jpg" class="block group-hover:hidden rounded-t-xl">
+                    <img src="/src/img/bestseller-4-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div class="m-5">
+                    <div class="flex justify-between items-center my-6">
+                        <h2 class="text-xl font-medium tracking-wide">斜紋布束腰外套</h2>
+                        <p class="text-xl font-semibold">NT$60000</p>
+                    </div>
+                    <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">多個口袋與時尚優雅的設計華實兼備</p>                                                        
+                    <div class="flex flex-col justify-start flex-wrap relative">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center">
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">S</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">M</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">L</button>
+                            </div> 
+                            <div class="flex justify-center items-center">
+                                <i class="bx bx-minus-circle text-xl cursor-pointer"></i>
+                                <input type="text" value="1" class="w-12 text-center">
+                                <i class="bx bx-plus-circle text-xl cursor-pointer"></i>
+                            </div> 
+                        </div>
+                        <div class="mt-4">
+                            <button class="flex justify-center items-center px-3 w-full h-10 rounded-md bg-pink-550 text-white shadow-lg hover:bg-pink-400 transition-colors">
+                                <span class="text-sm tracking-wider px-3 font-medium">加入購物車</span>
+                                <i class="bx bx-cart-add text-2xl"></i>
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-xl">
+                <div class="group">
+                    <img src="/src/img/bestseller-5-1.jpg" class="block group-hover:hidden rounded-t-xl">
+                    <img src="/src/img/bestseller-5-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div class="m-5">                                
+                    <div class="flex justify-between items-center my-6">
+                        <h2 class="text-xl font-medium tracking-wide">斜紋布短褲</h2>
+                        <p class="text-xl font-semibold">NT$32500</p>
+                    </div>
+                    <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">輕巧斜紋布短褲呈現天然效果</p>                                                        
+                    <div class="flex flex-col justify-start flex-wrap relative">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center">
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">S</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">M</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">L</button>
+                            </div> 
+                            <div class="flex justify-center items-center">
+                                <i class="bx bx-minus-circle text-xl cursor-pointer"></i>
+                                <input type="text" value="1" class="w-12 text-center">
+                                <i class="bx bx-plus-circle text-xl cursor-pointer"></i>
+                            </div> 
+                        </div>
+                        <div class="mt-4">
+                            <button class="flex justify-center items-center px-3 w-full h-10 rounded-md bg-pink-550 text-white shadow-lg hover:bg-pink-400 transition-colors">
+                                <span class="text-sm tracking-wider px-3 font-medium">加入購物車</span>
+                                <i class="bx bx-cart-add text-2xl"></i>
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-xl">
+                <div class="group">
+                    <img src="/src/img/bestseller-6-1.jpg" class="block group-hover:hidden rounded-t-xl">
+                    <img src="/src/img/bestseller-6-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div class="m-5">
+                    <div class="flex justify-between items-center my-6">
+                        <h2 class="text-xl font-medium tracking-wide">羅紋縐紗半截裙</h2>
+                        <p class="text-xl font-semibold">NT$39000</p>
+                    </div>
+                    <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">時尚夏日印花，綁帶腰圍為裙身注入高雅氣息</p>                                                        
+                    <div class="flex flex-col justify-start flex-wrap relative">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center">
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">S</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">M</button>
+                                <button class="text-base w-8 h-8 rounded-full mx-1 hover:bg-black hover:text-white focus:shadow-md focus:bg-black focus:text-white transition-colors">L</button>
+                            </div> 
+                            <div class="flex justify-center items-center">
+                                <i class="bx bx-minus-circle text-xl cursor-pointer"></i>
+                                <input type="text" value="1" class="w-12 text-center">
+                                <i class="bx bx-plus-circle text-xl cursor-pointer"></i>
+                            </div> 
+                        </div>
+                        <div class="mt-4">
+                            <button class="flex justify-center items-center px-3 w-full h-10 rounded-md bg-pink-550 text-white shadow-lg hover:bg-pink-400 transition-colors">
+                                <span class="text-sm tracking-wider px-3 font-medium">加入購物車</span>
+                                <i class="bx bx-cart-add text-2xl"></i>
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="flex items-center my-10">
+            <button class="font-quiche text-2xl">More
+                <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+            </button>                        
+        </div>      	
+    </section>
+
+    <section class="w-full h-85vh flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-Poppins font-bold p-5">Our Story</h1>
+        <div class="flex flex-col justify-center items-center m-8">
+            <p class="text-xs text-center my-7">品牌創立於2010年，對於產品不盲目追求時下的流行，帶給大家歷久不衰的商品。</p>
+            <p class="text-xs my-5">/ 做自己最好看的樣子，沒人有權利去定義你 /</p>
+            <p class="text-xs my-5">All You Need,All Unique.</p>    
+            <p class="text-xs my-5">你永遠是那麽獨一無二</p>  
+        </div>              
+    </section>
+	<section id="ootd-sm" class="md:hidden flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-Poppins font-bold p-5">Outfit of the day</h1>
+        <div class="m-8">
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-1.jpg" class="h-3/4 object-cover object-right rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">01 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-2.jpg" class="h-3/4 object-cover rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">02 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-3-2.jpg" class="h-3/4 object-cover rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">03 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-4.jpg" class="h-3/4 object-cover rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">04 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-5.jpg" class="h-3/4 object-cover rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">05 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-6.jpg" class="h-3/4 object-cover rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">06 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+            <div class="m-8 h-screen">
+                <img src="/src/img/ootd-7.jpg" class="h-3/4 object-cover rounded-2xl">            
+                <div class="my-6 mx-1 flex justify-between items-baseline">
+                    <h1 class="font-quiche text-3xl italic mr-5">07 /</h1>
+                    <button class="flex items-center font-quiche text-xl">Lookbook
+                        <i class='bx bx-right-arrow-alt text-xl px-2'></i>
+                    </button>                        
+                </div>
+            </div>
+        </div>
+    </section>
+	<section id="ootd" class="hidden md:block">
+        <div class="w-full h-85vh grid grid-cols-3">
+            <div class="relative group flex justify-center items-center cursor-pointer">
+                <div class="h-85vh hidden absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                <button class="hidden absolute top-1/2 left-1/3 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button> 
+                <img src="/src/img/ootd-1.jpg" class="h-85vh object-cover object-right">         
+            </div>
+            <div class="flex justify-center items-center col-span-2 bg-gradient-to-br from-blue-150 via-purple-350 to-pink-450 h-85vh">
+                <img src="/src/img/ootd-title.png" class="w-3/4">
+            </div>
+        </div>
+        <div class="w-full h-85vh grid grid-cols-3">
+            <div class="flex flex-col justify-center items-center bg-blue-150 h-85vh">
+                <h2 class="m-8 font-quiche text-2xl italic">Orchid</h2>
+                <img src="/src/img/moon.png" width="30px" class="m-8">
+                <p class="m-8 font-quiche text-xs">It symbolizes proud and glorious femininity.</p>
+            </div>
+            <div class="h-85vh relative group cursor-pointer">
+                <div class="h-85vh hidden absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                <button class="hidden absolute top-1/2 left-1/3 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button> 
+                <img src="/src/img/ootd-2.jpg" class="h-85vh object-cover">
+            </div>
+            <div class="flex flex-col justify-center items-center h-85vh bg-purple-350">
+                <div class="relative group cursor-pointer">
+                    <div class="hidden w-3/4 m-16 absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                    <button class="hidden absolute top-1/2 left-1/3 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button> 
+                    <img src="/src/img/ootd-3.jpg" class="w-3/4 m-16 object-cover">                
+                </div>
+                <p class="text-lg font-quiche italic">Orchid</p>
+            </div>
+        </div>
+        <div class="w-full bg-gradient-to-b from-pink-50 via-pink-50 to-pink-50/0 my-32">
+            <p class="font-quiche text-2xl text-orange-700/20 italic text-end pt-6">/ Here comes the hump day, which means there’s only two days left<br>until the weekend. /</p>
+            <div class="grid grid-cols-3 m-20">
+                <div class="relative group cursor-pointer">
+                    <div class="hidden absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                    <button class="hidden absolute top-1/2 left-1/3 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button>
+                    <img src="/src/img/ootd-4.jpg">
+                </div>					
+                <div class="relative group cursor-pointer">
+                    <div class="hidden absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                    <button class="hidden absolute top-1/2 left-1/3 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button>
+                    <img src="/src/img/ootd-6.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-gradient-to-r from-blue-150 via-purple-350 to-gray-200 grid grid-cols-3 my-40">
+            <div class="flex flex-col justify-center items-center m-4">
+                <h2 class="font-quiche italic text-2xl">Rose</h2>
+                <img src="/src/img/star.png" width="30px" class="m-12">
+                <p class="font-quiche italic text-sm text-center">Be it love, longing or desire.</p>
+            </div>
+            <div class="flex flex-col justify-end col-span-2">
+                <p class="font-quiche italic text-base text-white text-end py-10 px-10">The rose is red, the violet’s blue,<br>the honey’s sweet, and so are you.</p>
+                <div class="justify-end items-center mt-4 grid grid-cols-2">
+                    <div class="relative group cursor-pointer">
+                        <div class="hidden absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                        <button class="hidden absolute top-1/2 left-1/3 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button>
+                        <img src="/src/img/ootd-5.jpg">
+                    </div>
+                    <div class="relative group cursor-pointer">
+                        <div class="hidden absolute -inset-0 bg-white/70 group-hover:block transition-colors"></div>
+                        <button class="hidden absolute top-1/2 left-1/2 px-5 py-2 border rounded-full border-black tracking-wide group-hover:block hover:bg-black hover:text-white hover:shadow-lg">Lookbook</button>
+                        <img src="/src/img/ootd-7.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="flex justify-center align-middle flex-col bg-gradient-to-br from-pink-450 via-purple-350 to-red-300 text-white font-Poppins relative">
+		<div id="newsletter" class="grid xl:grid-cols-2 justify-center items-center mx-24 py-24 relative">
+			<div class="flex flex-col justify-center items-center">
+				<h2 class="text-2xl font-bold pb-4 tracking-wide">訂閱Muses生活週報</h2>
+				<p class="text-center">Email獲取服裝搭配靈感、最新產品資訊與優惠。</p>
+			</div>
+			<div class="flex justify-center items-center my-8 xl:mx-8">
+				<input type="text" placeholder="你的電子信箱" class="p-4 rounded-tl-lg rounded-bl-lg sm:w-3/4">
+				<button class="p-4 border-none rounded-tr-lg rounded-br-lg bg-pink-550">訂閱</button>
+			</div>
+            <div class="w-full border-white border absolute bottom-0 left-0"></div>
+		</div>
+		<div class="mx-24 pt-24 pb-12">
+			<a class="text-4xl font-bold font-funkydori py-8">Muses</a>	
+			<div class="grid grid-cols-12 gap-5 mt-8">
+				<div class="flex flex-col items-start col-span-12 xl:col-span-6 mb-8">
+					<h4 class="font-medium tracking-wider mb-8">聯絡我們</h4>
+					<p class="font-extralight mb-4"><strong class="font-normal">地址 :</strong> 235 新北市中和區中安街85號</p>
+					<p class="font-extralight mb-4"><strong class="font-normal">電話 :</strong> (+886) 01 2345 6789</p>
+					<p class="font-extralight mb-4"><strong class="font-normal">營業時間 :</strong> 10:00 - 18:00, Mon. - Sat.</p>
+				</div>
+				<div class="flex flex-col items-start col-span-12 sm:col-span-6 xl:col-span-3 mb-8">
+					<h4 class="font-medium tracking-wider mb-8">關於我們</h4>
+					<a class="mb-2 font-normal">關於Muses</a>
+					<a class="mb-2 font-normal">退換貨服務</a>
+					<a class="mb-2 font-normal">重要公告</a>
+					<a class="mb-2 font-normal">服務條款</a>
+					<a class="mb-2 font-normal">隱私權政策</a>
+				</div>
+				<div class="flex flex-col items-start col-span-12 sm:col-span-6 xl:col-span-3 mb-8">
+					<div class="mb-8">
+                        <h4 class="font-medium tracking-wider mb-4">追蹤我們</h4>
+						<div class="flex w-1/3">
+							<img src="src/img/instagram.jpg" class="my-4">
+							<img src="src/img/line.jpg" class="my-4 ml-4">
+						</div>
+					</div>
+					<div class="flex flex-col">
+						<h4 class="font-medium tracking-wider mb-4">安全支付</h4>
+						<img src="src/img/Payment.png" class="my-4 w-1/2">				
+					</div>
+				</div>			
+			</div>
+			<div class="text-xs">
+				<p> ©2022. JaneJhang - Ecommerce Template</p>
+			</div>
+		</div>
+	</footer>
+
+    <script type="text/javascript">
+		const bar = document.getElementById('bar');
+		const nav = document.getElementById('navbar');
+		const close = document.getElementById('close');
+
+        if(bar){
+			bar.addEventListener('click', () => {
+			nav.classList.add('act');
+			})
+		}
+		
+		if(close){
+			close.addEventListener('click', () => {
+			nav.classList.remove('act');
+			})
+		}
+
+
+
+
+		window.addEventListener('scroll', function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY >0);
+		});
+	</script>
+  </body>
+</html>

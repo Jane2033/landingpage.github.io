@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    @apply fixed top-0 left-0 w-full z-50 text-white;
+}
+
+.sticky{
+    @apply bg-gradient-to-r from-pink-450 to-red-300 shadow-md;    
+}
+
+*{
+    @apply scroll-smooth;
+}
+
+.circle{
+    @apply absolute -top-48 -left-40 overflow-hidden;
+}
+
+.topright{
+    @apply absolute top-0 right-0 overflow-hidden;
+}
+
+.bottomleft{
+    @apply absolute left-0 mt-96 py-48 scale-110;
+}
+
+.act{
+    @apply block;
+}
+
+.z-title{
+    @apply z-30;
+}
+
+.z-bg{
+    @apply z-10;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "page-demo",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "watch-css": "parcel watch src/index.css --dist-dir public/css --public-url /css",
+    "build-css": "parcel build src/index.css --dist-dir public/css --public-url /css",
+    "production-css": "NODE_ENV=production parcel build src/index.css --dist-dir public/css --public-url /css --no-content-hash --no-source-maps"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.12",
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^14.1.0",
+    "tailwindcss": "^3.1.7"
+  }
+}
