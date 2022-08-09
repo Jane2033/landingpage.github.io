@@ -6,9 +6,10 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "watch-css": "parcel watch src/index.css --dist-dir public/css --public-url /css",
-    "build-css": "parcel build src/index.css --dist-dir public/css --public-url /css",
-    "production-css": "NODE_ENV=production parcel build src/index.css --dist-dir public --public-url /css --no-content-hash --no-source-maps"
+    "watch-css": "parcel watch src/index.css --dist-dir public",
+    "build-css": "parcel build src/index.css --dist-dir public",
+    "production-css": "NODE_ENV=production parcel build src/index.css --dist-dir public --no-content-hash --no-source-maps",
+    "out": "npx tailwindcss -i ./src/index.css -o ./public/index.css --watch"
 },
   "keywords": [],
   "author": "",
