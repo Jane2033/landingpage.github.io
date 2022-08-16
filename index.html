@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link rel="icon" href="src/img/logo.png">
     <link href="public/index.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   </head>
   <body>
     <header class="">
@@ -68,7 +69,7 @@
     
     <section id="Home" class="relative flex bg-gradient-to-b from-blue-150 via-pink-25 to-pink-25/0">
 		<div class="grid grid-cols-12 p-24 z-title">	
-            <div class="col-span-6 mt-7 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 relative">
+            <div class="col-span-6 mt-7 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 relative title">
                 <div class="text-white font-quiche">
                     <h1 class="text-xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl">All you need all unique</h1>
                 </div>
@@ -78,7 +79,7 @@
                 </div>
             </div>	
             <div class="col-span-6 col-start-7">
-                <img src="src/img/jump.png">
+                <img src="src/img/jump.png" class="jump">
             </div>
         </div>
         <div class="flex flex-col z-bg">
@@ -564,13 +565,19 @@
 			})
 		}
 
-
-
-
 		window.addEventListener('scroll', function(){
 			var header = document.querySelector('header');
 			header.classList.toggle('sticky', window.scrollY >0);
 		});
+
+
+        gsap.from(".jump", {duration: 1, opacity:0, y: 150});
+        gsap.from(".circle", {duration: 1, opacity:0, x: -150});
+        gsap.from(".topright", {duration: 1, opacity:0, x: 150});
+        gsap.from(".bottomleft", {duration: 1, opacity:0, y: 150});
+        gsap.from(".title", {duration: 1, opacity:0, y: -150});
+        gsap.from("header", {duration: 1, opacity:0});
+
 	</script>
   </body>
 </html>
