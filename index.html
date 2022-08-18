@@ -11,7 +11,6 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link rel="icon" href="src/img/logo.png">
     <link href="public/index.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   </head>
   <body>
     <header class="">
@@ -85,13 +84,13 @@
         <div class="flex flex-col z-bg">
             <div class="flex justify-between">
                 <img src="src/img/circle.svg" class="circle">
-                <img src="src/img/TopRight.png" class="topright">
+                <img src="src/img/topright.svg" class="topright">
             </div>
-            <img src="src/img/topleft.png" class="bottomleft">
+            <img src="src/img/topleft.svg" class="bottomleft">
         </div>
 	</section>
 
-    <section class="grid xl:grid-cols-3 md:grid-cols-1 gap-8 m-20">
+    <section class="grid xl:grid-cols-3 md:grid-cols-1 gap-8 m-20 section-1">
         <div class="my-5">
             <img src="src/img/bag.png" class="shadow-lg rounded-large">
             <div class="mt-5">
@@ -108,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class=" my-5 ">
+        <div class=" my-5">
             <img src="src/img/clothes.png" class="shadow-lg rounded-large">
             <div class="mt-5">
                 <span class="font-quiche text-xs">/ Clothes /</span>
@@ -142,7 +141,7 @@
         </div>
     </section>
 
-    <section id="products" class="flex flex-col justify-center items-center">
+    <section id="products" class="flex flex-col justify-center items-center section-2">
         <div class="flex justify-center mb-10">
             <h1 class="text-4xl font-Poppins font-bold p-5">New Arrivals</h1>
         </div>
@@ -353,7 +352,7 @@
         </div>      	
     </section>
 
-    <section class="w-full h-85vh flex flex-col justify-center items-center">
+   <!-- <section class="w-full h-85vh flex flex-col justify-center items-center">
         <h1 class="text-4xl font-Poppins font-bold p-5">Our Story</h1>
         <div class="flex flex-col justify-center items-center m-8">
             <p class="text-xs text-center my-7">品牌創立於2010年，對於產品不盲目追求時下的流行，帶給大家歷久不衰的商品。</p>
@@ -361,7 +360,7 @@
             <p class="text-xs my-5">All You Need,All Unique.</p>    
             <p class="text-xs my-5">你永遠是那麽獨一無二</p>  
         </div>              
-    </section>
+    </section>-->
 	<section id="ootd-sm" class="md:hidden flex flex-col justify-center items-center">
         <h1 class="text-4xl font-Poppins font-bold p-5">Outfit of the day</h1>
         <div class="m-8">
@@ -548,6 +547,9 @@
 		</div>
 	</footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
     <script type="text/javascript">
 		const bar = document.getElementById('bar');
 		const nav = document.getElementById('navbar');
@@ -569,15 +571,7 @@
 			var header = document.querySelector('header');
 			header.classList.toggle('sticky', window.scrollY >0);
 		});
-
-
-        gsap.from(".jump", {duration: 1, opacity:0, y: 150});
-        gsap.from(".circle", {duration: 1, opacity:0, x: -150});
-        gsap.from(".topright", {duration: 1, opacity:0, x: 150});
-        gsap.from(".bottomleft", {duration: 1, opacity:0, y: 150});
-        gsap.from(".title", {duration: 1, opacity:0, y: -150});
-        gsap.from("header", {duration: 1, opacity:0});
-
 	</script>
+    <script src="src/index.js"></script>
   </body>
 </html>
