@@ -27,3 +27,53 @@ gsap.from("#products", {
     y: 150, 
     opacity: 0
 });
+
+gsap.from("#ootd-sm", {
+    scrollTrigger: {
+        trigger: '#ootd-sm',
+        start: "25% bottom"
+    },
+    duration: 2, 
+    y: 150, 
+    opacity: 0
+});
+
+gsap.from("#ootd-1", {
+    scrollTrigger: {
+        trigger: '#ootd-1',
+        start: "25% bottom"
+    },
+    duration: 2, 
+    y: 150, 
+    opacity: 0
+});
+
+gsap.from("#ootd-2", {
+    scrollTrigger: {
+        trigger: '#ootd-2',
+        start: "25% bottom"
+    },
+    duration: 2, 
+    y: 150, 
+    opacity: 0
+});
+
+gsap.from("#ootd-3", {
+    scrollTrigger: {
+        trigger: '#ootd-3',
+        start: "10% bottom"
+    },
+    duration: 2, 
+    y: 150, 
+    opacity: 0
+});
+
+gsap.from("#ootd-4", {
+    scrollTrigger: {
+        trigger: '#ootd-4',
+        start: "10% bottom"
+    },
+    duration: 2, 
+    y: 150, 
+    opacity: 0
+});
