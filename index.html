@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link rel="icon" href="src/img/logo.png">
-    <link href="public/index.css" rel="stylesheet">
+    <link href="/public/index.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header class="">
         <nav class="justify-between items-baseline p-5 hidden lg:flex">
             <a class="text-4xl font-bold font-funkydori pl-5 scroll-smooth" href="#Home">Muses</a>
@@ -67,28 +67,36 @@
     </header>
     
     <section id="Home" class="relative flex bg-gradient-to-b from-blue-150 via-pink-25 to-pink-25/0">
-		<div class="grid grid-cols-12 p-24 z-title">	
-            <div class="col-span-6 mt-7 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 relative title">
+		<div class="grid grid-cols-12 p-12 lg:p-24 z-title">	
+            <div class="col-span-12 sm:col-span-6 mt-12 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 relative title">
                 <div class="text-white font-quiche">
-                    <h1 class="text-xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl">All you need all unique</h1>
+                    <h1 class="text-5xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl">All you need<br>all unique</h1>
                 </div>
-                <div class="text-white mt-3 sm:mt-5 md:mt-5 xl:mt-16">
-                    <button class="border rounded-full text-xs md:text-sm lg:text-base py-1 px-2 lg:px-3 xl:py-2 xl:px-5 tracking-wider mr-8">加入會員</button>
-                    <button class="border rounded-full text-xs md:text-sm lg:text-base py-1 px-2 lg:px-3 xl:py-2 xl:px-5 tracking-wider">開始購物</button>
+                <div class="mt-9 sm:mt-5 md:mt-5 xl:mt-16">
+                    <button class="px-8 py-3 border rounded-xl text-base lg:px-3 xl:py-2 xl:px-8 tracking-wider mr-8 bg-white text-pink-450">加 入 會 員</button>
+                    <button class="px-8 py-3 border rounded-xl text-base lg:px-3 xl:py-2 xl:px-5 tracking-wider text-white">開 始 購 物</button>
                 </div>
             </div>	
-            <div class="col-span-6 col-start-7">
+            <div class="col-span-12 sm:col-span-6 sm:col-start-7">
                 <img src="src/img/jump.png" class="jump">
             </div>
         </div>
         <div class="flex flex-col z-bg">
             <div class="flex justify-between">
-                <img src="src/img/circle.svg" class="circle">
-                <img src="src/img/topright.svg" class="topright">
+                <img src="src/img/circle.svg" class="absolute -top-40 -left-12 scale-125">
+                <img src="src/img/topright.svg" class="hidden">
             </div>
-            <img src="src/img/topleft.svg" class="bottomleft">
+            <img src="src/img/topleft.svg" class="hidden">
         </div>
 	</section>
+    <section class="bg-gradient-to-tr from-red-100 via-pink-25 to-blue-150 sm:hidden">
+        <div class="flex justify-center items-center flex-col font-quiche font-extralight py-24">
+            <h1 class="text-6xl mb-8 tracking-wider">5<span class="text-4xl">%</span></h1>
+            <h1 class="text-3xl mb-16 italic tracking-wider">off</h1>
+            <div class="bg-black h-2 w-10 mb-8"></div>
+            <p class="">會 員 獨 享</p>
+        </div>
+    </section>
 
     <section class="grid xl:grid-cols-3 md:grid-cols-1 gap-8 m-20 section-1">
         <div class="my-5">
@@ -142,8 +150,8 @@
     </section>
 
     <section id="products" class="flex flex-col justify-center items-center section-2">
-        <div class="flex justify-center mb-10">
-            <h1 class="text-4xl font-Poppins font-bold p-5">New Arrivals</h1>
+        <div class="flex justify-center my-10">
+            <h1 class="text-4xl font-quiche font-bold p-5">New Arrivals</h1>
         </div>
         <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 m-20">
             <div class="shadow-lg rounded-xl">

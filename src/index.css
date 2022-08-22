@@ -14,17 +14,22 @@ header{
     @apply scroll-smooth;
 }
 
-.circle{
-    @apply absolute -top-48 -left-40 overflow-hidden;
+@media (min-width: 1024px) {
+    .circle{
+        @apply absolute -top-48 -left-40 overflow-hidden;
+    }
+
+    .topright{
+        @apply inline-block absolute top-0 right-0 overflow-hidden;
+    }
+
+    .bottomleft{
+        @apply absolute left-0 mt-96 py-48 scale-110;
+    }
 }
 
-.topright{
-    @apply absolute top-0 right-0 overflow-hidden;
-}
 
-.bottomleft{
-    @apply absolute left-0 mt-96 py-48 scale-110;
-}
+
 
 .act{
     @apply block;
