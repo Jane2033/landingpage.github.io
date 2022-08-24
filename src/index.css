@@ -34,11 +34,3 @@ header{
 .act{
     @apply block;
 }
-
-.z-title{
-    @apply z-30;
-}
-
-.z-bg{
-    @apply z-10;
-}

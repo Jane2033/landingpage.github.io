@@ -7,7 +7,7 @@ gsap.from(".bottomleft", {duration: 1, opacity:0, y: 150});
 gsap.from(".title", {duration: 1, opacity:0, y: -150});
 gsap.from("header", {duration: 1, opacity:0});
 
-
+/*
 gsap.from(".section-1", {
     scrollTrigger: {
         trigger: '.section-1',
@@ -76,4 +76,4 @@ gsap.from("#ootd-4", {
     duration: 2, 
     y: 150, 
     opacity: 0
-});
+});*/

@@ -67,29 +67,28 @@
     </header>
     
     <section id="Home" class="relative flex bg-gradient-to-b from-blue-150 via-pink-25 to-pink-25/0">
-		<div class="grid grid-cols-12 p-12 lg:p-24 z-title">	
-            <div class="col-span-12 sm:col-span-6 mt-12 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 relative title">
+		<div class="grid grid-cols-12 p-12 lg:p-24 z-30">	
+            <div class="col-span-12 mt-12 md:col-span-6 relative title">
                 <div class="text-white font-quiche">
-                    <h1 class="text-5xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl">All you need<br>all unique</h1>
+                    <h1 class="text-7xl sm:text-8xl md:text-7xl xl:text-8xl">All you need<br>all unique</h1>
                 </div>
-                <div class="mt-9 sm:mt-5 md:mt-5 xl:mt-16">
-                    <button class="px-8 py-3 border rounded-xl text-base lg:px-3 xl:py-2 xl:px-8 tracking-wider mr-8 bg-white text-pink-450">加 入 會 員</button>
-                    <button class="px-8 py-3 border rounded-xl text-base lg:px-3 xl:py-2 xl:px-5 tracking-wider text-white">開 始 購 物</button>
+                <div class="flex justify-center sm:justify-start mt-9 xl:mt-16">
+                    <button class="px-8 py-3 border rounded-xl text-base my-3 mr-5 tracking-wider bg-white text-pink-450 md:text-sm md:px-5 xl:px-8 xl:text-base">加 入 會 員</button>
+                    <button class="px-8 py-3 border rounded-xl text-base my-3 tracking-wider text-white md:text-sm md:px-5 xl:px-8 xl:text-base"><span>開 始 購 物</span></button>
                 </div>
+                <img src="src/img/topleft.png" class="hidden md:flex md:scale-90 md:-mx-14 md:-my-10">
             </div>	
-            <div class="col-span-12 sm:col-span-6 sm:col-start-7">
-                <img src="src/img/jump.png" class="jump">
+            <div class="col-span-12 md:col-span-6 md:col-start-7">
+                <img src="src/img/jump.png" class="jump">                
             </div>
-        </div>
-        <div class="flex flex-col z-bg">
-            <div class="flex justify-between">
-                <img src="src/img/circle.svg" class="absolute -top-40 -left-12 scale-125">
-                <img src="src/img/topright.svg" class="hidden">
-            </div>
-            <img src="src/img/topleft.svg" class="hidden">
+        </div>           
+        <div class="z-10">                
+            <img src="src/img/circle.png" class="flex absolute -top-10 -left-12 scale-150 md:-top-48 md:-left-44 md:scale-100 xl:-top-80 xl:-left-56 xl:scale-100 ">
+            <img src="src/img/topright.svg" class="hidden md:flex md:absolute md:top-0 md:-right-32 lg:-right-20 xl:-right-10">
         </div>
 	</section>
-    <section class="bg-gradient-to-tr from-red-100 via-pink-25 to-blue-150 sm:hidden">
+    
+    <section class="bg-gradient-to-tr from-red-100 via-pink-25 to-blue-150 md:hidden">
         <div class="flex justify-center items-center flex-col font-quiche font-extralight py-24">
             <h1 class="text-6xl mb-8 tracking-wider">5<span class="text-4xl">%</span></h1>
             <h1 class="text-3xl mb-16 italic tracking-wider">off</h1>
@@ -98,17 +97,17 @@
         </div>
     </section>
 
-    <section class="grid xl:grid-cols-3 md:grid-cols-1 gap-8 m-20 section-1">
+    <section class="grid md:grid-cols-3 gap-4 m-20 section-1">
         <div class="my-5">
             <img src="src/img/bag.png" class="shadow-lg rounded-large">
             <div class="mt-5">
                 <span class="font-quiche text-xs">/ Bags /</span>
                 <h2 class="text-3xl mt-3 tracking-wider">包款</h2>   
-                <div class="">
-                    <p class="text-xs my-12">精緻、永恆的款式，奢華的細節和現代設計。</p>
+                <div class="h-14">
+                    <p class="text-xs my-12">精緻、永恆的款式，奢華的細節和現代設計。</p>                    
+                </div>                             
+                <div class="flex flex-col justify-start items-start">
                     <div class="bg-black h-0.5 w-full my-5"></div>
-                </div>             
-                <div class="flex items-center">
                     <button class="font-quiche text-2xl">More
                         <i class='bx bx-right-arrow-alt text-xl px-2'></i>
                     </button>                        
@@ -120,11 +119,11 @@
             <div class="mt-5">
                 <span class="font-quiche text-xs">/ Clothes /</span>
                 <h2 class="text-3xl mt-3 tracking-wider">衣著</h2>   
-                <div class="">
+                <div class="h-14">
                     <p class="text-xs my-12">自由與高雅創意的展現。</p>
-                    <div class="bg-black h-0.5 w-full my-5"></div>
                 </div>             
-                <div class="flex items-center">
+                <div class="flex flex-col justify-start items-start">
+                    <div class="bg-black h-0.5 w-full my-5"></div>
                     <button class="font-quiche text-2xl">More
                         <i class='bx bx-right-arrow-alt text-xl px-2'></i>
                     </button>                        
@@ -136,11 +135,11 @@
             <div class="mt-5">
                 <span class="font-quiche text-xs">/ Accessories /</span>
                 <h2 class="text-3xl mt-3 tracking-wider">配飾</h2>   
-                <div class="">
+                <div class="h-14">
                     <p class="text-xs my-12">以標誌皮革和圖案精心製作的高雅配飾，採用雅致和經典色調。</p>
-                    <div class="bg-black h-0.5 w-full my-5"></div>
                 </div>             
-                <div class="flex items-center">
+                <div class="flex flex-col justify-start items-start">
+                    <div class="bg-black h-0.5 w-full my-5"></div>
                     <button class="font-quiche text-2xl">More
                         <i class='bx bx-right-arrow-alt text-xl px-2'></i>
                     </button>                        
@@ -161,8 +160,8 @@
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
-                        <h2 class="text-xl font-medium tracking-wide">V領羊絨毛衣</h2>
-                        <p class="text-xl font-semibold">NT$60000</p>
+                        <h2 class="text-lg sm:text-xl font-medium tracking-wide">V領羊絨毛衣</h2>
+                        <p class="text-lg sm:text-xl font-semibold">NT$60000</p>
                     </div>
                     <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">條紋羊絨毛衣寬鬆剪裁具時尚魅力</p>                                                        
                     <div class="flex flex-col justify-start flex-wrap relative">
@@ -194,8 +193,8 @@
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
-                        <h2 class="text-xl font-medium tracking-wide">珠地呢迷你裙</h2>
-                        <p class="text-xl font-semibold">NT$24000</p>
+                        <h2 class="text-lg sm:text-xl font-medium tracking-wide">珠地呢迷你裙</h2>
+                        <p class="text-lg sm:text-xl font-semibold">NT$24000</p>
                     </div>
                     <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">經典款式高雅細節重新演繹</p>                                                        
                     <div class="flex flex-col justify-start flex-wrap relative">
@@ -227,8 +226,8 @@
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
-                        <h2 class="text-xl font-medium tracking-wide">刺繡棉質T恤</h2>
-                        <p class="text-xl font-semibold">NT$24000</p>
+                        <h2 class="text-lg sm:text-xl font-medium tracking-wide">刺繡棉質T恤</h2>
+                        <p class="text-lg sm:text-xl font-semibold">NT$24000</p>
                     </div>
                     <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">輕巧布料及玩味設計完美迎合夏天</p>                                                        
                     <div class="flex flex-col justify-start flex-wrap relative">
@@ -260,8 +259,8 @@
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
-                        <h2 class="text-xl font-medium tracking-wide">斜紋布束腰外套</h2>
-                        <p class="text-xl font-semibold">NT$60000</p>
+                        <h2 class="text-lg sm:text-xl font-medium tracking-wide">斜紋布束腰外套</h2>
+                        <p class="text-lg sm:text-xl font-semibold">NT$60000</p>
                     </div>
                     <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">多個口袋與時尚優雅的設計華實兼備</p>                                                        
                     <div class="flex flex-col justify-start flex-wrap relative">
@@ -293,8 +292,8 @@
                 </div>
                 <div class="m-5">                                
                     <div class="flex justify-between items-center my-6">
-                        <h2 class="text-xl font-medium tracking-wide">斜紋布短褲</h2>
-                        <p class="text-xl font-semibold">NT$32500</p>
+                        <h2 class="text-lg sm:text-xl font-medium tracking-wide">斜紋布短褲</h2>
+                        <p class="text-lg sm:text-xl font-semibold">NT$32500</p>
                     </div>
                     <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">輕巧斜紋布短褲呈現天然效果</p>                                                        
                     <div class="flex flex-col justify-start flex-wrap relative">
@@ -326,8 +325,8 @@
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
-                        <h2 class="text-xl font-medium tracking-wide">羅紋縐紗半截裙</h2>
-                        <p class="text-xl font-semibold">NT$39000</p>
+                        <h2 class="text-lg sm:text-xl font-medium tracking-wide">羅紋縐紗半截裙</h2>
+                        <p class="text-lg sm:text-xl font-semibold">NT$39000</p>
                     </div>
                     <p class="text-xs text-gray-500 tracking-wide -mt-3 mb-6">時尚夏日印花，綁帶腰圍為裙身注入高雅氣息</p>                                                        
                     <div class="flex flex-col justify-start flex-wrap relative">
