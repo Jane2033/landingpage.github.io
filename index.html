@@ -15,17 +15,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-        theme: {
-        extend: {
-            fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            },
-        }
-        }
-    }
-    </script>
   </head>
   <body class="overflow-x-hidden">
     <header class="">
@@ -52,13 +41,15 @@
             <div>
                 <a class="text-4xl font-bold font-funkydori pl-5" href="#Home">Muses</a>
             </div>
-            <div class="text-xl p-5">
+            <div class="inline-block text-xl p-5 cursor-pointer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <i id="bar" class="bx bx-menu"></i>
             </div>
-            <div id="navbar" class="w-full h-screen bg-gradient-to-br from-pink-450 to-red-300 hidden relative">
+        </div>
+        <div class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full bg-gradient-to-br from-pink-450 to-red-300 invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out top-0 right-0 border-none w-96" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
                 <div class="flex flex-col justify-start">
                     <ul>
-                        <li class="text-2xl p-5"><i id="close" class="bx bx-x close"></i></li>
+                        <li class="text-2xl p-5 cursor-pointer" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i id="close" class="bx bx-x close"></i></li>
                         <li class="text-xl p-5 tracking-wider"><a href="#Home">Home</a></li>
                         <li class="text-xl p-5 mt-2 tracking-wider"><a href="#products">Shop</a></li>
                         <li class="text-xl p-5 mt-2 tracking-wider"><a href="#ootd">Ootd</a></li>
@@ -172,49 +163,17 @@
         </div>
         <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 m-20">
             <div class="shadow-lg rounded-xl">
-                <div class="group">
-                    <img src="" class="block group-hover:hidden ">
-                    <img src="" class="hidden group-hover:block rounded-t-xl">
-                </div>
-                <div
-                    id="carouselDarkVariant"
-                    class="carousel slide carousel-fade carousel-dark relative"
-                    data-bs-ride="carousel"
-                    >
-                    <!-- Indicators -->
+                <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
                     <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                        <button
-                        data-bs-target="#carouselDarkVariant"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                        ></button>
-                        <button
-                        data-bs-target="#carouselDarkVariant"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 1"
-                        ></button>
+                        <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="1" aria-label="Slide 1"></button>
                     </div>
-
-                    <!-- Inner -->
                     <div class="carousel-inner relative w-full overflow-hidden">
-                        <!-- Single item -->
                         <div class="carousel-item active relative float-left w-full">
-                        <img
-                            src="src/img/bestseller-1-1.jpg"
-                            class="block w-full rounded-t-xl"
-                            alt="V領羊絨毛衣"
-                        />
+                            <img src="src/img/bestseller-1-1.jpg" class="block w-full rounded-t-xl" alt="V領羊絨毛衣">
                         </div>
-
-                        <!-- Single item -->
                         <div class="carousel-item relative float-left w-full">
-                        <img
-                            src="src/img/bestseller-1-2.jpg"
-                            class="block w-full rounded-t-xl"
-                            alt="V領羊絨毛衣"
-                        />
+                            <img src="src/img/bestseller-1-2.jpg" class="block w-full rounded-t-xl" alt="V領羊絨毛衣">
                         </div>
                     </div>
                 </div>
@@ -247,9 +206,19 @@
                 </div>
             </div>
             <div class="shadow-lg rounded-xl">
-                <div class="group">
-                    <img src="src/img/bestseller-2-1.jpg" class="block group-hover:hidden rounded-t-xl">
-                    <img src="src/img/bestseller-2-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                <div id="carouselDarkVariant-2" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <button data-bs-target="#carouselDarkVariant-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant-2" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <div class="carousel-item active relative float-left w-full">
+                            <img src="src/img/bestseller-2-1.jpg" class="block w-full rounded-t-xl" alt="珠地呢迷你裙">
+                        </div>
+                        <div class="carousel-item relative float-left w-full">
+                            <img src="src/img/bestseller-2-2.jpg" class="block w-full rounded-t-xl" alt="珠地呢迷你裙">
+                        </div>
+                    </div>
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
@@ -280,10 +249,19 @@
                 </div>
             </div>
             <div class="shadow-lg rounded-xl">
-                <div class="group">
-                    <img src="src/img/bestseller-3-1.jpg" class="block group-hover:hidden rounded-t-xl">
-                    <img src="src/img/bestseller-3-2.jpg" class="hidden group-hover:block rounded-t-xl">
-                    <button class="p-2 bg-black"></button>
+                <div id="carouselDarkVariant-3" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <button data-bs-target="#carouselDarkVariant-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant-3" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <div class="carousel-item active relative float-left w-full">
+                            <img src="src/img/bestseller-3-1.jpg" class="block w-full rounded-t-xl" alt="刺繡棉質T恤">
+                        </div>
+                        <div class="carousel-item relative float-left w-full">
+                            <img src="src/img/bestseller-3-2.jpg" class="block w-full rounded-t-xl" alt="刺繡棉質T恤">
+                        </div>
+                    </div>
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
@@ -314,9 +292,19 @@
                 </div>
             </div>
             <div class="shadow-lg rounded-xl">
-                <div class="group">
-                    <img src="src/img/bestseller-4-1.jpg" class="block group-hover:hidden rounded-t-xl">
-                    <img src="src/img/bestseller-4-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                <div id="carouselDarkVariant-4" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <button data-bs-target="#carouselDarkVariant-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant-4" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <div class="carousel-item active relative float-left w-full">
+                            <img src="src/img/bestseller-4-1.jpg" class="block w-full rounded-t-xl" alt="斜紋布束腰外套">
+                        </div>
+                        <div class="carousel-item relative float-left w-full">
+                            <img src="src/img/bestseller-4-2.jpg" class="block w-full rounded-t-xl" alt="斜紋布束腰外套">
+                        </div>
+                    </div>
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
@@ -347,9 +335,19 @@
                 </div>
             </div>
             <div class="shadow-lg rounded-xl">
-                <div class="group">
-                    <img src="src/img/bestseller-5-1.jpg" class="block group-hover:hidden rounded-t-xl">
-                    <img src="src/img/bestseller-5-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                <div id="carouselDarkVariant-5" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <button data-bs-target="#carouselDarkVariant-5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant-5" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <div class="carousel-item active relative float-left w-full">
+                            <img src="src/img/bestseller-5-1.jpg" class="block w-full rounded-t-xl" alt="斜紋布短褲">
+                        </div>
+                        <div class="carousel-item relative float-left w-full">
+                            <img src="src/img/bestseller-5-2.jpg" class="block w-full rounded-t-xl" alt="斜紋布短褲">
+                        </div>
+                    </div>
                 </div>
                 <div class="m-5">                                
                     <div class="flex justify-between items-center my-6">
@@ -380,9 +378,19 @@
                 </div>
             </div>
             <div class="shadow-lg rounded-xl">
-                <div class="group">
-                    <img src="src/img/bestseller-6-1.jpg" class="block group-hover:hidden rounded-t-xl">
-                    <img src="src/img/bestseller-6-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                <div id="carouselDarkVariant-6" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <button data-bs-target="#carouselDarkVariant-6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant-6" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <div class="carousel-item active relative float-left w-full">
+                            <img src="src/img/bestseller-6-1.jpg" class="block w-full rounded-t-xl" alt="羅紋縐紗半截裙">
+                        </div>
+                        <div class="carousel-item relative float-left w-full">
+                            <img src="src/img/bestseller-6-2.jpg" class="block w-full rounded-t-xl" alt="羅紋縐紗半截裙">
+                        </div>
+                    </div>
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
@@ -421,15 +429,6 @@
         </div>      	
     </section>
 
-   <!-- <section class="w-full h-85vh flex flex-col justify-center items-center">
-        <h1 class="text-4xl font-Poppins font-bold p-5">Our Story</h1>
-        <div class="flex flex-col justify-center items-center m-8">
-            <p class="text-xs text-center my-7">品牌創立於2010年，對於產品不盲目追求時下的流行，帶給大家歷久不衰的商品。</p>
-            <p class="text-xs my-5">/ 做自己最好看的樣子，沒人有權利去定義你 /</p>
-            <p class="text-xs my-5">All You Need,All Unique.</p>    
-            <p class="text-xs my-5">你永遠是那麽獨一無二</p>  
-        </div>              
-    </section>-->
 	<section id="ootd-sm" class="md:hidden flex flex-col justify-center items-center">
         <h1 class="text-4xl font-Poppins font-bold p-5">Outfit of the day</h1>
         <div class="m-8">
