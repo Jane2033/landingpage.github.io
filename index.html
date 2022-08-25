@@ -11,6 +11,21 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link rel="icon" href="src/img/logo.png">
     <link href="public/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            },
+        }
+        }
+    }
+    </script>
   </head>
   <body class="overflow-x-hidden">
     <header class="">
@@ -158,8 +173,50 @@
         <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 m-20">
             <div class="shadow-lg rounded-xl">
                 <div class="group">
-                    <img src="src/img/bestseller-1-1.jpg" class="block group-hover:hidden rounded-t-xl">
-                    <img src="src/img/bestseller-1-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                    <img src="" class="block group-hover:hidden ">
+                    <img src="" class="hidden group-hover:block rounded-t-xl">
+                </div>
+                <div
+                    id="carouselDarkVariant"
+                    class="carousel slide carousel-fade carousel-dark relative"
+                    data-bs-ride="carousel"
+                    >
+                    <!-- Indicators -->
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <button
+                        data-bs-target="#carouselDarkVariant"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        ></button>
+                        <button
+                        data-bs-target="#carouselDarkVariant"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 1"
+                        ></button>
+                    </div>
+
+                    <!-- Inner -->
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <!-- Single item -->
+                        <div class="carousel-item active relative float-left w-full">
+                        <img
+                            src="src/img/bestseller-1-1.jpg"
+                            class="block w-full rounded-t-xl"
+                            alt="V領羊絨毛衣"
+                        />
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item relative float-left w-full">
+                        <img
+                            src="src/img/bestseller-1-2.jpg"
+                            class="block w-full rounded-t-xl"
+                            alt="V領羊絨毛衣"
+                        />
+                        </div>
+                    </div>
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
@@ -226,6 +283,7 @@
                 <div class="group">
                     <img src="src/img/bestseller-3-1.jpg" class="block group-hover:hidden rounded-t-xl">
                     <img src="src/img/bestseller-3-2.jpg" class="hidden group-hover:block rounded-t-xl">
+                    <button class="p-2 bg-black"></button>
                 </div>
                 <div class="m-5">
                     <div class="flex justify-between items-center my-6">
@@ -509,6 +567,7 @@
             </div>
         </div>
     </section>
+    
     <footer class="flex justify-center align-middle flex-col bg-gradient-to-br from-pink-450 via-purple-350 to-red-300 text-white font-Poppins relative">
 		<div id="newsletter" class="grid xl:grid-cols-2 justify-center items-center mx-24 py-24 relative">
 			<div class="flex flex-col justify-center items-center">
@@ -584,5 +643,6 @@
 		});
 	</script>
     <script src="src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </body>
 </html>
