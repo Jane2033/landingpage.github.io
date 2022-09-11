@@ -34,3 +34,11 @@ header{
 .act{
     @apply block;
 }
+
+.title{
+    @apply z-30;
+}
+
+.jump{
+    @apply z-10;
+}
